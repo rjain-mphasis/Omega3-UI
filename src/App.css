@@ -1,0 +1,276 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.App{
+  display: flex;
+}
+.mainpage{
+  background: whitesmoke;
+  width: 75%;
+  height: 100vh;
+}
+.sidebar{
+  width: 25%;
+  height: 100vh;
+  background: rgb(203, 203, 224);
+  color: black;
+  text-align: center;
+}
+.sidebar h2{
+  margin: 15px 0px;
+  height: 35px;
+  box-shadow: 0px 1px 10px 1px grey;
+}
+.sidebar ul{
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center;   */
+  text-align: center;
+}
+.sidebar ul li{
+  margin-bottom: 10px;
+  padding: 5px 50%;
+  width: 100%;
+}
+.sidebar .active{
+  background-color: whitesmoke;
+  width: 100%;
+  /* padding: 5px 50%; */
+  color: black;
+  box-shadow: 0px 1px 15px -3px black;
+  padding-right: 20vw;
+}
+.sidebar li .link{
+  text-decoration: none;
+  color: black;
+  padding-right: 20vh;
+  padding-left: 5px;
+}
+
+
+/* navmock */
+
+.navmock ul{
+  display: flex;
+  justify-content: space-around;
+  background: rgb(203, 203, 224);
+  height: 50px;
+}
+.navmock li .link{
+  text-decoration: none;
+  color: black;
+  font-weight: bolder;
+}
+.navmock ul li{
+  list-style: none;
+  margin: auto 0;
+}
+.navmock .active{
+  background-color: whitesmoke;
+  padding: 5px 10px;
+  text-align: center;
+  box-shadow: 10px 5px 6px 3px grey;
+}
+
+/* alert */
+.alert{
+  background-color: aqua;
+  width: 50%;
+  height: 30px;
+  margin: 50px auto;
+  padding: 0px 50px;
+}
+.alerts{
+  background-color: rgb(228, 66, 66);
+  width: 50%;
+  height: 30px;
+  margin: 50px auto;
+  padding: 0px 50px;
+}
+.center{
+  margin: 50px auto;
+}
+.button button{
+  margin: 15px 80px;
+  width: 100px;
+  height: 60px;
+  padding: 0px 10px;
+  color: whitesmoke;
+}
+
+.container{
+  width: 286px;
+  background: rgb(178, 226, 178);
+  height: 50vh;
+  margin: 5px auto;
+}
+.size{
+  width: 286px;
+  height: 180px;
+  background-color: rgb(37, 27, 27);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cardtittle{
+  padding-left: 10px;
+}
+.cardtittle button{
+  width: 130px;
+  height: 30px;
+  background-color: rgb(43, 189, 86);
+  margin-top: 10px;
+}
+div .heading{
+  margin: 10px auto;
+  width: 60%;
+}
+.closebtn{
+  width: 70%;
+  height: 30px;
+  text-align: end;
+  background-color: aquamarine;
+  font-size: large;
+  font-weight: bolder;
+  padding: 4px;
+  margin: 20px auto;
+}
+.closebtns{
+  width: 70%;
+  height: 30px;
+  text-align: end;
+  background-color: gold;
+  font-size: large;
+  font-weight: bolder;
+  padding: 4px;
+  margin: 20px auto;
+}
+#myList{
+width: 220px;
+height: 30px;
+margin: 20px auto;
+margin: 20px 50px;
+color: white;
+background-color: rgb(15, 15, 153);
+font-size: 17px;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+.modal{
+  border: 1px solid black;
+  width: 50%;
+  height: 140px;
+  background-color: antiquewhite;
+  margin: 20px auto;
+}
+.firstrow{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid black;
+  height: 50px;
+}
+.close{
+  font-size: larger;
+  font-weight: bolder;
+}
+.secondrow{
+  text-align: start;
+  height: 30px;
+  border: 1px solid black;
+}
+.secondrow p{
+  margin-left: 5px;
+}
+.thirdrow{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid black;
+
+}
+.thirdrow button{
+  margin-top: 18px;
+  padding: 4px 12px;
+  background-color: rgb(102, 219, 102);
+
+}
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  margin: 10px 0px;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.page{
+  margin: 30px 30px;
+}
+.pagination {
+  display: inline-block;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+  border: 1px solid #ddd;
+}
+
+.pagination a.active {
+  background-color: #4CAF50;
+  color: white;
+  border: 1px solid #4CAF50;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+.center{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.footer{
+  width: 100%;
+  height: 60px;
+  background-color: black;
+  color: whitesmoke;
+
+}
+.footer p{
+  padding-top: 15px;
+  text-align: center;
+}
