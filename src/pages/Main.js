@@ -12,27 +12,29 @@ import Home from './Home'
 import Services from './Services'
 import Introduction from './Introduction'
 import Contacts from './Contacts'
-
+import { Mainmock } from './NavMock'
 
 export default class MainPage extends Component {
   render() {
+    
+    
+    Mainmock.map((item,i)=>{
     return (
-      <div className='mainpage'>
-        <Navbar/>
-        <Routes>
-        <Route path='/alert' element={<Alert/>}/>
-        <Route path='/buttons' element={<Button/>}/>
-        <Route path='/cards' element={<Cards/>}/>
-        <Route path='/heading' element={<Heading/>}/>
-        <Route path='/closebutton' element={<CloseButton/>}/>
-        <Route path='/dropdowns' element={<Dropdowns/>}/>
-        <Route path='/investors' element={<Investors/>}/>
-        <Route path='/home' element={<Home/>}/>
-        <Route path='/introduction' element={<Introduction/>}/>
-        <Route path='/services' element={<Services/>}/>
-        <Route path='/contacts' element={<Contacts/>}/>
-      </Routes>   
-      </div>
-    )
-  }
-}
+     
+        <><Navbar /><Routes>
+        <li key={i}>
+          <Route className='mainpage' to={item.path}>{item.name}</Route>
+        </li>
+        {/* <Route path='/alert' element={<Alert/>}/>
+    <Route path='/buttons' element={<Button/>}/>
+    <Route path='/cards' element={<Cards/>}/>
+    <Route path='/heading' element={<Heading/>}/>
+    <Route path='/closebutton' element={<CloseButton/>}/>
+    <Route path='/dropdowns' element={<Dropdowns/>}/>
+    <Route path='/investors' element={<Investors/>}/>
+    <Route path='/home' element={<Home/>}/>
+    <Route path='/introduction' element={<Introduction/>}/>
+    <Route path='/services' element={<Services/>}/>
+    <Route path='/contacts' element={<Contacts/>}/> */}
+      </Routes></>  
+    )}
